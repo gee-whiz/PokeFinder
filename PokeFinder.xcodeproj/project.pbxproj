@@ -14,6 +14,7 @@
 		5EDC566B1E266B95009B4A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC566A1E266B95009B4A7F /* Assets.xcassets */; };
 		5EDC566E1E266B95009B4A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC566C1E266B95009B4A7F /* LaunchScreen.storyboard */; };
 		5EDC56761E266DC5009B4A7F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EDC56751E266DC5009B4A7F /* GoogleService-Info.plist */; };
+		5EDC569B1E276E6E009B4A7F /* PokeAnotations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EDC569A1E276E6E009B4A7F /* PokeAnotations.swift */; };
 		B7BB69C1EDC3E2C7357BCDF2 /* Pods_PokeFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F00AA7A5E911A1EB4032C7A /* Pods_PokeFinder.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		5EDC566D1E266B95009B4A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5EDC566F1E266B95009B4A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5EDC56751E266DC5009B4A7F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5EDC568F1E267D6D009B4A7F /* PokeFinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokeFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		5EDC569A1E276E6E009B4A7F /* PokeAnotations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnotations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +76,58 @@
 		5EDC565F1E266B95009B4A7F /* PokeFinder */ = {
 			isa = PBXGroup;
 			children = (
-				5EDC56601E266B95009B4A7F /* AppDelegate.swift */,
-				5EDC56621E266B95009B4A7F /* ViewController.swift */,
-				5EDC56641E266B95009B4A7F /* Main.storyboard */,
-				5EDC566A1E266B95009B4A7F /* Assets.xcassets */,
-				5EDC56751E266DC5009B4A7F /* GoogleService-Info.plist */,
-				5EDC566C1E266B95009B4A7F /* LaunchScreen.storyboard */,
-				5EDC566F1E266B95009B4A7F /* Info.plist */,
+				5EDC569D1E276F80009B4A7F /* Utils */,
+				5EDC56981E276E3A009B4A7F /* Model */,
+				5EDC56991E276E40009B4A7F /* View */,
+				5EDC56971E276E31009B4A7F /* Contoller */,
+				5EDC569C1E276F5A009B4A7F /* Resources */,
 				5EDC56671E266B95009B4A7F /* PokeFinder.xcdatamodeld */,
 			);
 			path = PokeFinder;
+			sourceTree = "<group>";
+		};
+		5EDC56971E276E31009B4A7F /* Contoller */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC56621E266B95009B4A7F /* ViewController.swift */,
+				5EDC56601E266B95009B4A7F /* AppDelegate.swift */,
+			);
+			name = Contoller;
+			sourceTree = "<group>";
+		};
+		5EDC56981E276E3A009B4A7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC569A1E276E6E009B4A7F /* PokeAnotations.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		5EDC56991E276E40009B4A7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC566C1E266B95009B4A7F /* LaunchScreen.storyboard */,
+				5EDC56641E266B95009B4A7F /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		5EDC569C1E276F5A009B4A7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC566F1E266B95009B4A7F /* Info.plist */,
+				5EDC56751E266DC5009B4A7F /* GoogleService-Info.plist */,
+				5EDC566A1E266B95009B4A7F /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5EDC569D1E276F80009B4A7F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5EDC568F1E267D6D009B4A7F /* PokeFinder-Bridging-Header.h */,
+			);
+			name = Utils;
 			sourceTree = "<group>";
 		};
 		617988A59CF29D77CF317145 /* Pods */ = {
@@ -221,6 +266,7 @@
 			files = (
 				5EDC56631E266B95009B4A7F /* ViewController.swift in Sources */,
 				5EDC56691E266B95009B4A7F /* PokeFinder.xcdatamodeld in Sources */,
+				5EDC569B1E276E6E009B4A7F /* PokeAnotations.swift in Sources */,
 				5EDC56611E266B95009B4A7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +394,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.pokefinder.immedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -362,6 +409,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = za.co.pokefinder.immedia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
